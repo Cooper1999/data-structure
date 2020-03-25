@@ -1,0 +1,15 @@
+1.整体建立顺序表
+Void CreatList(SqList*&L, Elem Type a[], int n)
+{int i;
+L=(SqList*)malloc(sizeof(SqList));
+for(i=0;i<n;i++)
+L->data[i]=a[i];
+L->length=n;
+}
+2.线性表的基本运算
+（1）	初始化线性表InitList(L)
+该运算的结果是构造一个空的线性表L。实际上只需将length 成员设置为0即可。
+Void InitList(SqList*&L)
+{ L=(SqList*)malloc(sizeof(SqList));
+L->length=0;
+}
